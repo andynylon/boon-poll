@@ -1,0 +1,36 @@
+@import "styles/modules/bourbon";
+@import "styles/global/colors";
+@import "styles/mixins/responsiveness";
+@import "styles/mixins/typography";
+@import "styles/mixins/animations";
+
+.poll-footer {
+  display: flex;
+  align-items: center;
+  @include animInUp(400ms, 800ms);
+
+  &__active-profiles {
+    display: flex;
+    margin-right: 12px;
+    img {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: -5px;
+      transition: 150ms ease-out;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1em;
+    opacity: 0.8;
+  }
+  &__active-count {
+    flex-grow: 1;
+  }
+}

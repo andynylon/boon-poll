@@ -1,0 +1,62 @@
+@mixin animInUp($timing, $delay) {
+  opacity: 0;
+  animation-name: animInUp;
+  animation-duration: $timing;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  animation-timing-function: $easeBounce;
+}
+
+@keyframes animInUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@mixin animInRight($timing, $delay) {
+  opacity: 0;
+  animation-name: animInRight;
+  animation-duration: $timing;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  animation-timing-function: $easeBounce;
+}
+
+@keyframes animInRight {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@mixin animInLeft($timing, $delay) {
+  opacity: 0;
+  animation-name: animInLeft;
+  animation-duration: $timing;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+  animation-timing-function: $easeBounce;
+}
+
+@keyframes animInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+//Easing
+$easeBounce: cubic-bezier(0.34, 1.56, 0.64, 1);

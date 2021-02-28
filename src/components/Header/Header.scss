@@ -1,0 +1,39 @@
+@import "styles/modules/bourbon";
+@import "styles/global/colors";
+@import "styles/mixins/responsiveness";
+@import "styles/mixins/typography";
+@import "styles/mixins/animations";
+
+.poll-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__heading {
+    @include typo-headline4();
+    line-height: 28px;
+    text-align: center;
+    color: $colorTextPrimary;
+    width: 100%;
+    margin: 24px 0;
+    @include animInUp(400ms, 200ms);
+  }
+
+  svg {
+    fill: white;
+    margin-right: 3px;
+    margin-left: -5px;
+    @include animInRight(400ms, 400ms);
+  }
+
+  .next-live {
+    display: flex;
+    background: $colorRed;
+    color: white;
+    border-radius: 3px;
+    padding: 0 8px;
+    @include animInRight(400ms, 300ms);
+  }
+}

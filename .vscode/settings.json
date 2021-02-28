@@ -1,0 +1,18 @@
+{
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    // "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true
+}

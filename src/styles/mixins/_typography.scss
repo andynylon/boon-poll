@@ -1,5 +1,6 @@
-@import 'styles/global/variables';
-@import 'styles/mixins/responsiveness';
+@import "styles/global/variables";
+@import "styles/mixins/responsiveness";
+@import "styles/font/founders-grotesk";
 
 @mixin typo-p() {
   font-size: 16px;
@@ -98,7 +99,7 @@
 }
 
 @mixin typo-mono {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 @mixin typo-list-header {
